@@ -1,0 +1,17 @@
+package com.udacity.notepad.data
+
+import java.util.Date
+
+data class Note(
+    var id:Int = -1,
+    var text: String? = null,
+    var isPinned:Boolean = false,
+    var createdAt:Date = Date(),
+    var updatedAt: Date? = null
+)
+
+/*fun demoDataClasses(){
+    val note = Note(text = "This is a note")
+    note == note.copy()
+    val aCopy = note.copy(text = "Something else...",isPinned = true)
+}*/
